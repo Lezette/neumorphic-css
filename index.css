@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ecf0f3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: poppins;
+}
+
+.container {
+    position: relative;
+    background-color: #ecf0f3;
+    width: 350px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+  .title {
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #0eacb2;
+    letter-spacing: 1px;
+  }
+  
+  .inputs {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  label, input, button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  label {
+    margin-bottom: 4px;
+    color: gray;
+  }
+  
+  label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+
+  
+  input::placeholder {
+    color: gray;
+  }
+  
+  input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+  
+  input[type="checkbox"] {
+    height: 25px;
+    width: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    padding: 0 !important;
+    background: #ecf0f3;
+    width: 25px;
+    box-shadow: inset 2px 2px 2px #cbced1, inset -2px -2px 2px white;
+  }
+  
+  .checkbox {
+    margin-top: 20px;
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .checkbox > span {
+    color: gray;
+    padding: 0.55rem 0.35rem;
+  }
+
+.checkbox > input:checked + span::before {
+  content: '\2713';
+  display: block;
+  align-items: center;
+  color: gray;
+  position: absolute;
+  left: .8rem;
+  top: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+  button {
+    margin-top: 20px;
+    background: #0eacb2;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s;
+    color: white;
+  }
+  
+  button:hover {
+    box-shadow: none;
+  }
+  
+  a {
+    position: absolute;
+    font-size: .78rem;
+    bottom: 3rem;
+    right: 3rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: #0eacb2;
+    border-radius: 10px;
+    padding: .2rem;
+  }
